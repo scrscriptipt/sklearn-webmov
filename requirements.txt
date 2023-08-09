@@ -1,7 +1,7 @@
 streamlit
 sklearn
 pandas
-googletrans
+googletrans==4.0.0-rc1
 pickle
 tmdbv3api
 asttokens
