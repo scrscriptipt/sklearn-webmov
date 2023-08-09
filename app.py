@@ -76,7 +76,7 @@ col_title.write(" ")
  
 webtoon_l = webtoon['title'].values
 col_title.subheader("좋아하는 웹툰을 고르세요^^")
-title = col_title.selectbox('',webtoon_l) #웹툰 input에서 값 받아오기
+title = col_title.selectbox(webtoon_l) #웹툰 input에서 값 받아오기
 if col_title.button('영화 추천 받기'): #버튼 값이 참이 되었을 때
     with st.spinner('검색하는 중...'): #로딩 창 보여주기
         col_title.write(" ")
