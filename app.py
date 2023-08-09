@@ -71,7 +71,7 @@ movies = pd.read_pickle('movies.pickle') #영화 타이틀과 id
 webtoon = pd.read_pickle('webtoon.pickle') #웹툰 타이틀과 id
 cos = pd.read_pickle('cos.pickle') #코사인 유사도 파일
 
-col_title.image('https://github.com/scrscriptipt/sklearn-webmov/blob/9b5d10fcc7c22e1fd5f40d268d4686391d57086b/Component%201.png') #제목 작성
+col_title.image('Component 1.png') #제목 작성
  
 webtoon_l = webtoon['title'].values
 title = col_title.selectbox('좋아하는 웹툰을 고르세요.',webtoon_l) #웹툰 input에서 값 받아오기
