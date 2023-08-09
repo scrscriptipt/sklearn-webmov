@@ -1,5 +1,4 @@
 #패키지 설치
-import pickle
 import pandas as pd
 import streamlit as st
 from tmdbv3api import Movie, TMDb
