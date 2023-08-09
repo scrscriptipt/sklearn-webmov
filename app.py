@@ -99,8 +99,8 @@ if col_title.button('영화 추천 받기'): #버튼 값이 참이 되었을 때
 
         #영화 이미지와 제목 표시
         idx = 0
-        for i in range(0,2):
-            cols = tab1.columns(5)
+        for i in range(0,5):
+            cols = tab1.columns(2)
             for col in cols:
                 col.subheader('{0}. {1}'.format(idx+1, titles[idx]))
                 col.image(images[idx])
