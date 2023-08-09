@@ -1,7 +1,0 @@
-streamlit
-sklearn
-pandas
-googletrans
-pickle
-tmdbv3api
-asttokens
