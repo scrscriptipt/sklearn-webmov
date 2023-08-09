@@ -72,11 +72,13 @@ webtoon = pd.read_pickle('webtoon.pickle') #웹툰 타이틀과 id
 cos = pd.read_pickle('cos.pickle') #코사인 유사도 파일
 
 col_title.image('Component 1.png') #제목 작성
+col_title.write(" ")
  
 webtoon_l = webtoon['title'].values
 title = col_title.selectbox('좋아하는 웹툰을 고르세요.',webtoon_l) #웹툰 input에서 값 받아오기
 if col_title.button('영화 추천 받기'): #버튼 값이 참이 되었을 때
     with st.spinner('검색하는 중...'): #로딩 창 보여주기
+        col_title.write(" ")
         tab1, tab2= st.tabs(['영화 이름 및 포스터' , '영화 정보']) #두개의 tab 생성하기
         images, titles, titles_en = get_recommendations(title) #함수로 추천 된 영화의 이미지, 타이틀, 영어 타이틀 값 받아오기
 
