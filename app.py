@@ -68,7 +68,7 @@ empty1, col_title, empty2 = st.columns([1,8,1])
 col_des = st.columns(1)
 
 # 피클 파일 받아오기
-movies = pickle.load(open("movies.pickle","rb")) #영화 타이틀과 id
+movies = pd.read_pickle('movies.pickle') #영화 타이틀과 id
 webtoon = pd.read_pickle('webtoon.pickle') #웹툰 타이틀과 id
 cos = pd.read_pickle('cos.pickle') #코사인 유사도 파일
 
