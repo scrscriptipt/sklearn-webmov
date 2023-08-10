@@ -11,8 +11,6 @@
   from {color: #FFFFFF;}
   to {
     color: #F15F5F;
-    transform: scale(110%, 110%)
-    transform: translate(-10, -10)
   }
 }
 
