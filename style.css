@@ -15,6 +15,14 @@
   }
 }
 
+@keyframes text{
+  from {color: #FFFFFF;}
+  to { transform: scale(10%, 10%)
+    color: #FFFFFF;
+    transform: scale(100%, 100%)
+  }
+}
+
 /* 버튼 크기 지정 */
 .css-7ym5gk.ef3psqc11{
     width: 100%;
