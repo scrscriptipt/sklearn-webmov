@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap');
 
 .css-10trblm.e1nzilvr0:hover{
-  color: #FFFFFF;
+  color: FFFFFF;
   animation-name: text;
   animation-duration: 1s;
 }
 
 @keyframes text{
-  from {color: #FFFFFF;}
+  from {color: FFFFFF;}
   to {
     color: #6799FF;
   }
