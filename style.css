@@ -10,7 +10,7 @@
 @keyframes text{
   from {color: #FFFFFF;}
   to {
-    color: #D1B2FF;
+    color: #F15F5F;
     transform: scale(110%, 110%)
     transform: translate(-10, -10)
   }
