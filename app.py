@@ -137,13 +137,13 @@ if col_title.button('영화 추천 받기'): #버튼 값이 참이 되었을 때
 
         
         #이름 넣기
-        tab3.title('프로젝트 팀')
-        tab3.header("담당 선생님")
-        tab3.write(" ")
-        tab3.subheader("정*영")
-        tab3.header("프로그래머")
-        tab3.write(" ")
-        tab3.subheader("김*원, 유*성")
-        tab3.header("아이디어 정리 및 보고서")
-        tab3.subheader("오*후, 이*수")
-        tab3.write(" ")
+        st.tab3.title('프로젝트 팀')
+        st.tab3.header("담당 선생님")
+        st.tab3.write(" ")
+        st.tab3.subheader("정*영")
+        st.tab3.header("프로그래머")
+        st.tab3.write(" ")
+        st.tab3.subheader("김*원, 유*성")
+        st.tab3.header("아이디어 정리 및 보고서")
+        st.tab3.subheader("오*후, 이*수")
+        st.tab3.write(" ")
