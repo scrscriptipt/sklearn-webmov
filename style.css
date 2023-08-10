@@ -12,6 +12,7 @@
   to {
     color: #D1B2FF;
     transform: scale(110%, 110%)
+    transform: translate(-10, -10)
   }
 }
 
