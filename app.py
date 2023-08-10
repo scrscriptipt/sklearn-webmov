@@ -140,8 +140,8 @@ if col_title.button('영화 추천 받기'): #버튼 값이 참이 되었을 때
         with tab3:
             st.title('프로젝트 팀')
             st.header("담당 선생님")
-            st.write(" ")
             st.subheader("정*영")
+            st.write(" ")
             st.header("프로그래머")
             st.write(" ")
             st.subheader("김*원, 유*성")
