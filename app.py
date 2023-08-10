@@ -9,7 +9,7 @@ import streamlit.components.v1 as components
 st.set_page_config(layout = 'wide') #화면에 꽉 채우기
 st.sidebar.title('웹툰 정보') #sidebar에 웹툰정보 타이틀 쓰기
 
-translator = Translator() #번역 패키지에서 인스턴트 생성
+translator = Translator() #번역 패키지에서 인스턴트 생성 
 
 with open('style.css', encoding='UTF8') as f:
     st.markdown(f'<style >{f.read()}</style>', unsafe_allow_html=True)
@@ -80,7 +80,7 @@ title = col_title.selectbox('종아하는 웹툰을 고르세요.',webtoon_l) #�
 if col_title.button('영화 추천 받기'): #버튼 값이 참이 되었을 때
     with st.spinner('검색하는 중...'): #로딩 창 보여주기
         col_title.write(" ")
-        tab1, tab2= st.tabs(['영화 이름 및 포스터' , '영화 정보']) #두개의 tab 생성하기
+        tab1, tab2, tab3= st.tabs(['영화 이름 및 포스터' , '영화 정보', '만든 사람']) #두개의 tab 생성하기
         images, titles, titles_en = get_recommendations(title) #함수로 추천 된 영화의 이미지, 타이틀, 영어 타이틀 값 받아오기
 
         #웹툰에 대한 정보 받아오고 사이드바에 표시
@@ -134,3 +134,14 @@ if col_title.button('영화 추천 받기'): #버튼 값이 참이 되었을 때
                 col.subheader('영화 장르')
                 col.write(t_s)
                 idx += 1
+        #이름 넣기
+        tab3.title('프로젝트 팀')
+        tab3.header("담당 선생님")
+        tab3.write(" ")
+        tab3.subheader("정*영")
+        tab3.header("프로그래머")
+        tab3.write(" ")
+        tab3.subheader("김*원, 유*성")
+        tab3.header("아이디어 정리 및 보고서")
+        tab3.subheader("오*후, 이*수")
+        tab3.write(" ")
