@@ -115,10 +115,13 @@ if col_title.button('영화 추천 받기'): #버튼 값이 참이 되었을 때
             for col in cols:
                 col.header('{0}. {1}'.format(idx+1, titles[idx]))
                 col.subheader('영화 정보')
-                result = translator.translate(movie_info.loc[indx[titles_en[idx]], 'overview'], dest = 'ko') #영화 내용이 영어 이므로 해석
-                col.write('영어: {0}'.format(movie_info.loc[indx[titles_en[idx]], 'overview']))
-                col.write('한국어: {0}'.format(result.text))
-                col.write('')
+                try:
+                    result = translator.translate(movie_info.loc[indx[titles_en[idx]], 'overview'], dest = 'ko') #영화 내용이 영어 이므로 해석
+                    col.write('영어: {0}'.format(movie_info.loc[indx[titles_en[idx]], 'overview']))
+                    col.write('한국어: {0}'.format(result.text))
+                    col.write('')
+                except:
+                    col.write('영화 정보를 가지고 올 수 없습니다.')
                 t_s = ''
                 for n in range(len(df1.loc[indx[titles_en[idx]],'genres'])): #장르 정보 받아와 표시
                     t_s = ('{0} '.format(t_s + df1.loc[indx[titles_en[idx]], 'genres'][n]['name']))
