@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap');
 
 .css-10trblm.e1nzilvr0:hover{
-  color: #D1B2FF;
-  transform: scale(10%, 10%)
+  color: #FFFFFF;
   animation-name: text;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+}
+
+@keyframes text{
+  from {color: #FFFFFF;}
+  to {
+    color: #D1B2FF;
+    transform: scale(10%, 10%)
+  }
 }
 
 /* 버튼 크기 지정 */
