@@ -80,7 +80,7 @@ title = col_title.selectbox('종아하는 웹툰을 고르세요.',webtoon_l) #�
 if col_title.button('영화 추천 받기'): #버튼 값이 참이 되었을 때
     with st.spinner('검색하는 중...'): #로딩 창 보여주기
         col_title.write(" ")
-        tab1, tab2, tab3= st.tabs(['영화 이름 및 포스터' , '영화 정보', '만든 사람']) #세개의 tab 생성하기
+        tab1, tab2, tab3= st.tabs(['영화 이름 및 포스터' , '영화 정보', '제작자']) #세개의 tab 생성하기
         images, titles, titles_en = get_recommendations(title) #함수로 추천 된 영화의 이미지, 타이틀, 영어 타이틀 값 받아오기
 
         #웹툰에 대한 정보 받아오고 사이드바에 표시
