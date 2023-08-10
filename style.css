@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap');
 
 .css-10trblm.e1nzilvr0:hover{
-  font-size: 100%;
-  font-family: 'Grandiflora One', serif;
-  color: rgb(118, 118, 118);
-  text-align: center;
-  text-shadow: 3px 3px 10px #838383;
+  color: #D1B2FF;
+  transform: scale(10%, 10%)
+  animation-name: text;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 /* 버튼 크기 지정 */
