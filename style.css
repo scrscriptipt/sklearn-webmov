@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap');
 
-.css-10trblm.e1nzilvr0:hover{
-  color: #FFFFFF;
-  animation-name: text;
-  animation-duration: 1s;
-  animation-iteration-count: 10;
-}
-
-@keyframes text{
-  from {color: #FFFFFF;}
-  to {
-    color: #F15F5F;
-  }
-}
-
 css-zt5ig. e1nzilvr3:hover{
   color: #FFFFFF;
   animation-name: text;
