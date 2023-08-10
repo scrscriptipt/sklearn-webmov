@@ -70,7 +70,7 @@ col_des = st.columns(1)
 # 피클 파일 받아오기
 movies = pd.read_pickle('movies.pickle') #영화 타이틀과 id
 webtoon = pd.read_pickle('webtoon.pickle') #웹툰 타이틀과 id
-cos = pd.read_pickle('https://github.com/scrscriptipt/sklearn-webmov/blob/f3db1fd492f2cb48714bce6e4e28ba4583c38a1e/cos2.pickle') #코사인 유사도 파일
+cos = pd.read_pickle('cos2.pickle') #코사인 유사도 파일
 
 col_title.image('Component 1.png') #제목 작성
 col_title.write(" ")
