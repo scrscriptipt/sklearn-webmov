@@ -139,6 +139,9 @@ if col_title.button('영화 추천 받기'): #버튼 값이 참이 되었을 때
         #이름 넣기
         with tab3:
             st.title('프로젝트 팀')
+            st.header("담당 교수님")
+            st.subheader("윤@순")
+            st.write(" ")
             st.header("담당 선생님")
             st.subheader("정@영")
             st.write(" ")
