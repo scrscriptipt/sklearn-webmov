@@ -22,6 +22,7 @@ movie_info = pd.read_csv('tmdb_5000_movies.csv') #영화 정보 받아오기
 df1 = pd.DataFrame(movie_info)
 naver_csv = pd.read_csv('naver.csv') #웹툰 정보 받아오기
 df2 = pd.DataFrame(naver_csv)
+df2['genre'] = df2['genre'].fillna('')
 indx = pd.Series(df1.index, index = df1['title']).drop_duplicates() #타이틀을 입력하면 영화 인덱스 값 받아오는 함수
 indx2 = pd.Series(df2.index, index = df2['title']).drop_duplicates() #타이틀을 입력하면 웹툰 인덱스 값 받아오는 함수
 
