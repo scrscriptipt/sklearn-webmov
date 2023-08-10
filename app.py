@@ -145,7 +145,7 @@ if col_title.button('영화 추천 받기'): #버튼 값이 참이 되었을 때
             st.header("담당 선생님")
             st.subheader("정@영")
             st.write(" ")
-            st.header("프로그래머")
+            st.header("코딩")
             st.subheader("김@원, 유@성")
             st.write(" ")
             st.header("아이디어 정리 및 보고서")
