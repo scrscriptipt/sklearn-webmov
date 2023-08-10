@@ -14,6 +14,20 @@
   }
 }
 
+css-zt5ig. e1nzilvr3:hover{
+  color: #FFFFFF;
+  animation-name: text;
+  animation-duration: 1s;
+  animation-iteration-count: 10;
+}
+
+@keyframes text{
+  from {color: #FFFFFF;}
+  to {
+    color: #6799FF;
+  }
+}
+
 /* 버튼 크기 지정 */
 .css-7ym5gk.ef3psqc11{
     width: 100%;
