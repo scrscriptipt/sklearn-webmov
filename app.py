@@ -89,7 +89,7 @@ if col_title.button('영화 추천 받기'): #버튼 값이 참이 되었을 때
         st.sidebar.subheader('2.웹툰 장르')
         st.sidebar.write(df2.loc[indx2[title], 'genre'])
         st.sidebar.write('')
-        if df2.loc[indx2[title],'genre'] == nan:
+        if (df2.loc[indx2[title],'genre']) == nan:
             st.sidebar.write('웹툰 연령대 정보를 가지고 올 수 없습니다.')
         else:
             st.sidebar.subheader('3.웹툰 연령대')
