@@ -91,7 +91,9 @@ if col_title.button('영화 추천 받기'): #버튼 값이 참이 되었을 때
         st.sidebar.write(df2.loc[indx2[title], 'genre'])
         st.sidebar.write('')
         if (df2.loc[indx2[title],'age']) == '':
+            st.sidebar.subheader('3.웹툰 연령대')
             st.sidebar.write('웹툰 연령대 정보를 가지고 올 수 없습니다.')
+            st.sidebar.write('')
         else:
             st.sidebar.subheader('3.웹툰 연령대')
             st.sidebar.write(df2.loc[indx2[title], 'age'])
